@@ -42,6 +42,10 @@ export class Card {
   @Column({ type: 'float', nullable: true })
   width?: number;
 
+  @Field()
+  @Column()
+  boardId: string;
+
   @Field({ nullable: true })
   @Column({ nullable: true })
   columnId?: string;
